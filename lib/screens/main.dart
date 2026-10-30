@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:master_list/models/item.dart';
+import 'package:master_list/screens/detail.dart';
 
+import 'detail_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -58,7 +60,12 @@ class _MasterListState extends State<MasterList> {
               subtitle: Text(item.subtitle),
               trailing: Icon(Icons.chevron_right),
               onTap: () {
-
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailScreen(item: item),
+                  ),
+                );
               },
             ),
           );
