@@ -7,8 +7,6 @@ class DetailScreen extends StatelessWidget{
   const DetailScreen({super.key, required this.item});
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-
 
     return Scaffold(
       appBar: AppBar(
